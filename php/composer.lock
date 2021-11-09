@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0788625b773a3c891675e16b7577eed0",
+    "packages": [
+        {
+            "name": "paymennt/paymennt-php",
+            "version": "v0.1.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paymennt/paymennt-php.git",
+                "reference": "67b4c14e3de95be0bb659f2418f75fa4f9c36011"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paymennt/paymennt-php/zipball/67b4c14e3de95be0bb659f2418f75fa4f9c36011",
+                "reference": "67b4c14e3de95be0bb659f2418f75fa4f9c36011",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Paymennt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bashar Saleh",
+                    "email": "developer@paymennt.com"
+                }
+            ],
+            "description": "PHP client for the PAYMENNT api",
+            "homepage": "https://www.paymennt.com",
+            "keywords": [
+                "api",
+                "paymennt",
+                "payment gateway",
+                "payment processing"
+            ],
+            "support": {
+                "issues": "https://github.com/paymennt/paymennt-php/issues",
+                "source": "https://github.com/paymennt/paymennt-php/tree/v0.1.1-alpha"
+            },
+            "time": "2021-11-07T09:29:49+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
