@@ -10,7 +10,7 @@ $client = new \Paymennt\PaymenntClient(
 $client->useTestEnvironment(true);
 
 $request = new \Paymennt\webhooks\CreateWebhookRequest();
-$request->address = "https://www.demo2.com/handle-paymennt-callback"; // Webhook endpoint that PointCheckout server will push messages to.
+$request->address = "https://www.demo2.com/handle-paymennt-callback"; // Webhook endpoint that Paymennt server will push messages to.
 
 
 $webhook = $client->createWebhook($request);

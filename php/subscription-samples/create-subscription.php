@@ -17,7 +17,7 @@ $request->amount = "100.00"; // transaction amount
 //$request->customerId = "006"; // unique Id to refer to a customer
 $request->returnUrl = "https://www.example.com/handle-paymennt-callback";
 
-$request->customer = new \Paymennt\checkout\Customer(); // required
+$request->customer = new \Paymennt\object\Customer(); // required
 $request->customer->id = "123456"; // customer first name
 $request->customer->firstName = "John"; // customer first name
 $request->customer->lastName = "Smith"; // customer last name
@@ -40,3 +40,4 @@ echo "Status                  : " . $subscription->status . "\n";
 echo "Amount                  : " . $subscription->currency . " " . $subscription->amount . "\n";
 echo "StartDate               : " . $subscription->startDate . "\n";
 echo "Customer Name           : " . $subscription->customer->firstName . " " . $subscription->customer->lastName . "\n";
+ 

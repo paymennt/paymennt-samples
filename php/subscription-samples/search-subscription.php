@@ -12,7 +12,7 @@ $client->useTestEnvironment(true);
 $request = new \Paymennt\subscription\SearchSubscriptionRequest();
 $request->status = "ACTIVE";
 
-$request->customer = new \Paymennt\checkout\Customer(); // required
+$request->customer = new \Paymennt\object\Customer(); // required
 $request->customer->email = "john.smith@example.com"; // customer email address
 $request->customer->phone = "918318111210"; // customer contact with country code
 $request->customer->reference = "cus-001"; // customer refernece in your system
