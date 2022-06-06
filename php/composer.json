@@ -1,9 +1,8 @@
 {
   "name": "paymennt/paymennt-php-test",
   "description": "paymennt php test",
-  
   "require": {
-    "paymennt-test/paymennt-php": "*"
+    "paymennt/paymennt-php": "*"
   },
   "license": "proprietary",
   "minimum-stability": "dev",
