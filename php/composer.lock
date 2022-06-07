@@ -1,23 +1,52 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@abdullahkhan1214 
+paymennt
+/
+paymennt-samples
+Public
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+paymennt-samples/php/composer.lock
+
+Bashar Saleh Sample php web-request
+Latest commit 76acf09 on Nov 9, 2021
+ History
+ 0 contributors
+68 lines (68 sloc)  2.26 KB
+   
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc3b6614e7ed164e400e43ebdc05efcb",
+    "content-hash": "0788625b773a3c891675e16b7577eed0",
     "packages": [
         {
-            "name": "paymennt-test/paymennt-php",
-            "version": "dev-main",
+            "name": "paymennt/paymennt-php",
+            "version": "v0.1.1-alpha",
             "source": {
                 "type": "git",
-                "url": "https://github.com/abdullahkhan1214/paymennt-php.git",
-                "reference": "1317f9243d3c38e6d59f5d6882a5a2446b9c55b8"
+                "url": "https://github.com/paymennt/paymennt-php.git",
+                "reference": "67b4c14e3de95be0bb659f2418f75fa4f9c36011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abdullahkhan1214/paymennt-php/zipball/1317f9243d3c38e6d59f5d6882a5a2446b9c55b8",
-                "reference": "1317f9243d3c38e6d59f5d6882a5a2446b9c55b8",
+                "url": "https://api.github.com/repos/paymennt/paymennt-php/zipball/67b4c14e3de95be0bb659f2418f75fa4f9c36011",
+                "reference": "67b4c14e3de95be0bb659f2418f75fa4f9c36011",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +54,6 @@
                 "ext-json": "*",
                 "php": ">=5.6.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -51,9 +79,10 @@
                 "payment processing"
             ],
             "support": {
-                "source": "https://github.com/abdullahkhan1214/paymennt-php/tree/main"
+                "issues": "https://github.com/paymennt/paymennt-php/issues",
+                "source": "https://github.com/paymennt/paymennt-php/tree/v0.1.1-alpha"
             },
-            "time": "2022-06-03T11:28:11+00:00"
+            "time": "2021-11-07T09:29:49+00:00"
         }
     ],
     "packages-dev": [],
@@ -66,3 +95,16 @@
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
