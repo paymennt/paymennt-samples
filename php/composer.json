@@ -2,7 +2,7 @@
   "name": "paymennt/paymennt-php-test",
   "description": "paymennt php test",
   "require": {
-    "paymennt/paymennt-php": "v0.1.1-alpha"
+    "paymennt/paymennt-php": "^1.0"
   },
   "license": "proprietary",
   "minimum-stability": "dev",
