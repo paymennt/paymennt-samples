@@ -9,11 +9,11 @@ $client = new \Paymennt\PaymenntClient(
 );
 $client->useTestEnvironment(true);
 
-$request = new \Paymennt\branches\SearchAllBranchRequest();
+$request = new \Paymennt\branches\BranchLookupRequest();
 $request->page = "0"; // optional, by default set to 0
 $request->size = "15"; // optional, by default set to 20
 
-$allBranch = $client->searchAllBranchesRequest($request);
+$allBranch = $client->branchLookupRequest($request);
 
 foreach($allBranch->content as $branch) {
 

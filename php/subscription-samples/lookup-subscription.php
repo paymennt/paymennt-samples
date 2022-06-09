@@ -9,10 +9,10 @@ $client = new \Paymennt\PaymenntClient(
 );
 $client->useTestEnvironment(true);
 
-$request = new \Paymennt\subscription\SearchSubscriptionRequest();
+$request = new \Paymennt\subscription\SubscriptionLookupRequest();
 $request->status = "ACTIVE";
 
-$request->customer = new \Paymennt\object\Customer(); // required
+$request->customer = new \Paymennt\model\Customer(); // required
 $request->customer->email = "john.smith@example.com"; // customer email address
 $request->customer->phone = "918318111210"; // customer contact with country code
 $request->customer->reference = "cus-001"; // customer refernece in your system
@@ -23,7 +23,7 @@ $request->page = "4"; // page number, default is 0
 $request->size = "11"; // page size, default is 20 
 
 
-$subscriptions = $client->searchSubscriptionRequest($request);
+$subscriptions = $client->subscriptionLookupRequest($request);
 
 echo "totalPages       : " . $subscriptions->totalPages . "\n";
 echo "pages            : " . $subscriptions->page . "\n";

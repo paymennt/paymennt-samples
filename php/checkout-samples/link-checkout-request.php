@@ -19,21 +19,21 @@ $request->description = "string: demo Link checkout"; // description of the orde
 $request->sendSms = "true"; // indicator to send the payment link via SMS to the customer
 $request->sendEmail = "false"; // indicator to send the payment link via Email to the customer.
 
-$request->totals = new \Paymennt\object\Totals(); // optional
+$request->totals = new \Paymennt\model\Totals(); // optional
 $request->totals->subtotal = "90.00"; // item subtotal exclusive of VAT/Tax in order currency
 $request->totals->tax = "5"; // VAT/Tax for this purchase in order currency
 $request->totals->shipping = "5"; // shipping cost in order currency
 $request->totals->handling = "0"; // handling fees in order currency
 $request->totals->discount = "0"; // discount applied ()
 
-$request->customer = new \Paymennt\object\Customer(); // required
+$request->customer = new \Paymennt\model\Customer(); // required
 $request->customer->firstName = "John"; // customer first name
 $request->customer->lastName = "Smith"; // customer last name
 $request->customer->email = "john.smith@example.com"; // customer email address
 $request->customer->phone = "9715xxxxxxxx"; // customer email address
 $request->customer->reference = "cus-001"; // customer refernece in your system
 
-$request->billingAddress = new \Paymennt\object\Address(); // required
+$request->billingAddress = new \Paymennt\model\Address(); // required
 $request->billingAddress->name = "John Smith"; // name of person at billing address
 $request->billingAddress->address1 = "120 Some Drive"; // billing address 1
 $request->billingAddress->address2 = "Apt 222"; // billing address 2
@@ -42,7 +42,7 @@ $request->billingAddress->state = "Dubai"; // state (if applicable)
 $request->billingAddress->zip = "00000"; // zip/postal code
 $request->billingAddress->country = "ARE"; // 3-letter country code
 
-$request->deliveryAddress = new \Paymennt\object\Address(); // required if shipping is required
+$request->deliveryAddress = new \Paymennt\model\Address(); // required if shipping is required
 $request->deliveryAddress->name = "John Smith"; // name of person at billing address
 $request->deliveryAddress->address1 = "120 Some Drive"; // billing address 1
 $request->deliveryAddress->address2 = "Apt 222"; // billing address 2
@@ -52,7 +52,7 @@ $request->deliveryAddress->zip = "00000"; // zip/postal code
 $request->deliveryAddress->country = "ARE"; // 3-letter country code
 
 $request->items = []; // required
-$request->items[0] = new \Paymennt\object\Item();
+$request->items[0] = new \Paymennt\model\Item();
 $request->items[0]->name = "ITEM 1"; // name / description of item
 $request->items[0]->unitprice = "100"; // item unit price
 $request->items[0]->quantity = "2"; // quanitity purchased by customer

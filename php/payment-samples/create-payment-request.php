@@ -17,21 +17,21 @@ $checkoutDetails->amount = "1090"; // transaction amount
 $checkoutDetails->returnUrl = "https://www.example.com/handle-paymennt-callback";
 
 // order total = subtotal + tax + shipping + handling - discount
-$checkoutDetails->totals = new \Paymennt\object\Totals(); // optional
+$checkoutDetails->totals = new \Paymennt\model\Totals(); // optional
 $checkoutDetails->totals->subtotal = "90.00"; // item subtotal exclusive of VAT/Tax in order currency
 $checkoutDetails->totals->tax = "5"; // VAT/Tax for this purchase in order currency
 $checkoutDetails->totals->shipping = "5"; // shipping cost in order currency
 $checkoutDetails->totals->handling = "0"; // handling fees in order currency
 $checkoutDetails->totals->discount = "0"; // discount applied ()
 
-$checkoutDetails->customer = new \Paymennt\object\Customer(); // required
+$checkoutDetails->customer = new \Paymennt\model\Customer(); // required
 $checkoutDetails->customer->firstName = "John"; // customer first name
 $checkoutDetails->customer->lastName = "Smith"; // customer last name
 $checkoutDetails->customer->email = "john.smith@example.com"; // customer email address
 $checkoutDetails->customer->phone = "9715xxxxxxxx"; // customer email address
 $checkoutDetails->customer->reference = "cus-001"; // customer refernece in your system
 
-$checkoutDetails->billingAddress = new \Paymennt\object\Address(); // required
+$checkoutDetails->billingAddress = new \Paymennt\model\Address(); // required
 $checkoutDetails->billingAddress->name = "John Smith"; // name of person at billing address
 $checkoutDetails->billingAddress->address1 = "120 Some Drive"; // billing address 1
 $checkoutDetails->billingAddress->address2 = "Apt 222"; // billing address 2
@@ -40,7 +40,7 @@ $checkoutDetails->billingAddress->state = "Dubai"; // state (if applicable)
 $checkoutDetails->billingAddress->zip = "00000"; // zip/postal code
 $checkoutDetails->billingAddress->country = "ARE"; // 3-letter country code
 
-$checkoutDetails->deliveryAddress = new \Paymennt\object\Address(); // required if shipping is required
+$checkoutDetails->deliveryAddress = new \Paymennt\model\Address(); // required if shipping is required
 $checkoutDetails->deliveryAddress->name = "John Smith"; // name of person at billing address
 $checkoutDetails->deliveryAddress->address1 = "120 Some Drive"; // billing address 1
 $checkoutDetails->deliveryAddress->address2 = "Apt 222"; // billing address 2
@@ -50,7 +50,7 @@ $checkoutDetails->deliveryAddress->zip = "00000"; // zip/postal code
 $checkoutDetails->deliveryAddress->country = "ARE"; // 3-letter country code
 
 $checkoutDetails->items = []; // required
-$checkoutDetails->items[0] = new \Paymennt\object\Item();
+$checkoutDetails->items[0] = new \Paymennt\model\Item();
 $checkoutDetails->items[0]->name = "ITEM 1"; // name / description of item
 $checkoutDetails->items[0]->unitprice = "100"; // item unit price
 $checkoutDetails->items[0]->quantity = "2"; // quanitity purchased by customer
