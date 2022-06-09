@@ -9,23 +9,23 @@ $client = new \Paymennt\PaymenntClient(
 );
 $client->useTestEnvironment(true);
 
-$request = new \Paymennt\checkout\SearchCheckoutRequest();
-// $request->type = "web"; //the mode used for checkout
-// $request->requestId = "transaction_299329017_1636283206"; // unique payment reference (an order can have multiple payment attempts)
-// $request->orderId = "299329017"; // the order id relating to this purchase
-// $request->status = "REFUNDED"; // status of the payment checkout to search for
+$request = new \Paymennt\checkout\CheckoutLookupRequest();
+$request->type = "web"; //the mode used for checkout
+$request->requestId = "transaction_299329017_1636283206"; // unique payment reference (an order can have multiple payment attempts)
+$request->orderId = "299329017"; // the order id relating to this purchase
+$request->status = "REFUNDED"; // status of the payment checkout to search for
 
-// $request->customer = new \Paymennt\object\Customer(); // optional
-// $request->customer->email = "bashar.saleh@gmail.com"; // customer email address
-// $request->customer->phone = "9715xxxxxxxx"; // customer phone number
-//$request->customer->reference = "2"; // customer refernece in your system
+$request->customer = new \Paymennt\model\Customer(); // optional
+$request->customer->email = "bashar.saleh@gmail.com"; // customer email address
+$request->customer->phone = "9715xxxxxxxx"; // customer phone number
+$request->customer->reference = "2"; // customer refernece in your system
 
-// $request->afterId = "000000020"; // filter checkouts after the provided id
-// $request->afterTimestamp = "2020-06-03T13:44:25"; // query checkouts created after specific date/time, date format is yyyy-mm-dd HH:MM:SS
+$request->afterId = "000000020"; // filter checkouts after the provided id
+$request->afterTimestamp = "2020-06-03T13:44:25"; // query checkouts created after specific date/time, date format is yyyy-mm-dd HH:MM:SS
 $request->page = "14"; // page number, default is 0
 $request->size = "11"; // page size, default is 20 
 
-$checkouts = $client->searchCheckoutRequest($request);
+$checkouts = $client->checkoutLookupRequest($request);
 
 echo "totalPages       : " . $checkouts->totalPages . "\n";
 echo "pages            : " . $checkouts->page . "\n";

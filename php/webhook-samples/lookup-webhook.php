@@ -9,11 +9,11 @@ $client = new \Paymennt\PaymenntClient(
 );
 $client->useTestEnvironment(true);
 
-$request = new \Paymennt\webhooks\SearchAllWebhookRequest();
+$request = new \Paymennt\webhooks\WebhookLookupRequest();
 $request->page = "0"; // optional, by default set to 0
 $request->size = "15"; // optional, by default set to 20
 
-$allWebhook = $client->searchAllWebhooksRequest($request);
+$allWebhook = $client->webhookLookupRequest($request);
 
 foreach($allWebhook->content as $webhook) {
 
